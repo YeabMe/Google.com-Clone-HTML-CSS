@@ -1,0 +1,191 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+    background: #fff;
+    color: black;
+}
+
+header{
+    padding: 10px;
+}
+
+ul{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   gap: 1rem;
+   list-style-type: none;
+}
+
+.apps img{
+  width: 20px;
+  text-align: center;
+  padding: 3px;
+}
+
+
+.logo{
+  background-color: rgb(21, 113, 199);
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+  font: 500;
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.title{
+  margin-top: 7rem ;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input{
+    width: 65%;
+    padding: 13px 50px;
+    border-radius: 100rem;
+    border: none;
+    outline: none;
+    background: white;
+    box-shadow: 1px 0px 6px 1px rgba(192, 192, 192, 0.4);
+    appearance: auto;    
+    box-sizing: border-box;
+    padding-block: 12px;
+    border: 1px solid #cecaca;
+    display: block;
+    background: transparent url("./img/googlemic_clr_24px.svg") no-repeat 260px;
+    background: 
+  url("./img/search-icon.svg") no-repeat 20px center,
+  url("./img/googlemic_clr_24px.svg") no-repeat right 12px center,
+  url("./img/googlemic_clr_24px.svg") no-repeat right 50px center;
+
+}
+
+.addShortcut{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin: 4rem;
+  padding: 4px ;
+  text-align: center;
+}
+
+.addShortcut img{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(216, 216, 216);
+    padding: 12px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.addShortcut p{
+  background-color: transparent;
+  margin: 0;
+  line-height: 100px; 
+}
+
+.six{
+  margin-left: 30px;
+}
+
+.six h1{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(191, 219, 211);
+  padding: 5px;
+  border-radius: 50%; /* Make the image container circular */
+  overflow: hidden;
+  color: #fff;
+}
+
+
+.edit{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(191, 219, 211);
+  padding: 8px;
+  border-radius: 50%; /* Make the image container circular */
+  overflow: hidden;
+  color: #fff;
+  float: right;
+  margin: 5px;
+
+}
+
+.edit1{
+  display: none;
+}
+
+footer{
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (min-width:960px) {
+
+  .search input{
+    width: 40%;
+  }
+
+  .addShortcut{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: px;
+    margin: 2rem auto;
+    padding: 4px ;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .six p{
+     font-size: 12px;
+     float: left;
+  }
+
+  .edit{
+    display: none;
+  }
+
+  .edit1{
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-color: rgb(217, 241, 235);
+  color: #000;
+  padding: 10px 2px;
+  border-radius: 25px;
+  overflow: hidden;
+  float: right;
+  margin: 5px;
+  }
+
+}
